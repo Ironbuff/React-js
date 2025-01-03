@@ -8,7 +8,7 @@ const Navbar = (props) => {
     return (
         <div className='border-b border-neutral-300 px-28 flex items-center justify-between h-[8ch] w-100'>
             {/* logo */}
-            <div className='flex align-center text-2xl font-bold'>
+            <div className='flex align-center text-3xl font-bold'>
                 <span className='text-red-600'>PORT</span>
                 <span className='text-neutral-900'>FOLIO</span>
             </div>
@@ -19,7 +19,7 @@ const Navbar = (props) => {
                         <Link to="/" className='text-neutral-900 hover:text-red-500 transition-all ease-in-out duration-300'>
                             Home
                         </Link>
-                        <Link to="/" className='text-neutral-900 hover:text-red-500 transition-all ease-in-out duration-300'>
+                        <Link to="/about" className='text-neutral-900 hover:text-red-500 transition-all ease-in-out duration-300'>
                             About
                         </Link>
                         <Link to="/" className='text-neutral-900 hover:text-red-500 transition-all ease-in-out duration-300'>

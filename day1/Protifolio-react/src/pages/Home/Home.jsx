@@ -2,31 +2,35 @@ import React from 'react'
 import { FiDownload } from "react-icons/fi";
 import { Link } from 'react-router-dom';
 import { FiArrowUpRight } from "react-icons/fi";
-import ProfileImage from '../../assets/Profile.png';
+import ProfileImage from '../../assets/Profileimg.png';
 const Home = (props) => {
   return (
-   <div className='flex items-center gap-x-3'>
-      <div className='flex  justify-center items-start w-full h-[calc(100vh-8ch)] px-28 flex-col gap-y-4  '>
-        {/* Content Section */}
-        <div className="flex items-center gap-4">
-            <span className="text-5xl text-red-950 font-bold">Hi, I'm</span>{""}
-            <span className="text-5xl text-red-700">{props.username}</span>
-        </div>
+   <div className='w-fulll flex items-center gap-x-3 px-28'>
+      <div className='flex justify-center items-start w-full h-[calc(100vh-8ch)] flex-col space-y-12'>
+       <div className="space-y-6">
+       <div className="space-y-4">
+          {/* Content Section */}
+        <h1 className="text-6xl font-bold text-red-600 flex items-center gap-4">
+            <span className="text-red-950 font-black">Hi, I'm</span>  Kushal Bhandari
+            {/* <span className="text-5xl text-red-700">{props.username}</span> */}
+        </h1>
         {/* Secondary Content */}
-        <div className='text-neutral-900 text-3xl font-semibold tracking-wide'>
+        <h4 className='text-neutral-900 text-3xl font-semibold tracking-wide'>
           A FULL STACK DEVELOPER
+        </h4>
         </div>
         {/* Main Content */}
-        <h5>Passionate about creating innovative web solutions and turning ideas into reality.With<br></br>
+        <p>Passionate about creating innovative web solutions and turning ideas into reality.With<br></br>
                 expertise in both front-end and back-end technologies,I bring a holistic approach to<br></br>
                 every project.
-        </h5>
+        </p>
+       </div>
         {/* Two Buttons */}
-        <div className="flex gap-x-2">
+        <div className="flex items-center gap-x-4">
           {/* Download Cv Button */}
-          <button className='bg-neutral-900 px-5 py-2 text-white flex rounded-full'>
+          <button className='bg-neutral-900 text-white flex rounded-full'>
             
-            <Link to="" className='flex gap-x-1'>
+            <Link to="" className='flex gap-x-1 px-8 py-3'>
               Download CV 
               <span className='flex items-center'>
                 <FiDownload/>
@@ -35,9 +39,9 @@ const Home = (props) => {
             
             </button>
             {/* Hire Me Button */}
-            <button className='bg-red-600 px-5 py-2 text-white flex rounded-full'>
+            <button className='bg-red-600 text-white flex rounded-full'>
             
-            <Link to="" className='flex gap-x-1'>
+            <Link to="" className='flex gap-x-1  px-8 py-3'>
               Hire Me
               <span className='flex items-center'>
                 <FiArrowUpRight className='text-white'/>
@@ -48,8 +52,8 @@ const Home = (props) => {
         </div>
       </div>
       {/* photo Container */}
-      <div>
-        <img src={ProfileImage} className='width-auto h-4/6'></img>
+      <div className=''>
+        <img src={ProfileImage} className='w-full aspect-square object-cover scale-125' />
       </div>
     </div>
 

@@ -15,10 +15,11 @@ function App() {
           {/* using routes and route  */}
           <Routes>
             {/* here in exact path put file and element put component */}
+            <Route exact path="/" element={<Home/>} />
             <Route exact path="/about" element={<About/>} />
           </Routes>
           {/* Hero Section */}
-          <Home username="Kushal Bhandari"/>
+          {/* <Home username="Kushal Bhandari"/> */}
         {/* Footer */}
         <Footer />
 
