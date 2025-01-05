@@ -3,6 +3,11 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import { FiArrowUpRight } from "react-icons/fi";
 import Profile from '../../assets/Kushal.png';
 function About() {
+    const Social = [
+      { id: 1, icon: <FaFacebookF />, link: "/" },
+      { id: 2, icon: <FaInstagram />, link: "/" },
+      { id: 3, icon: <FaTwitter />, link: "/" },
+    ]
   return (
     <div className='px-28 flex items-center h-[calc(100vh-8ch)] w-full justify-between'>
       <div className='flex flex-col space-y-12 items-start'>
