@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import Navbar from './components/Navbar/Navbar'
+import Navbar from './components/navbar/Navbar'
 import Home from "./pages/Home/Home"
 import Footer from "./components/Footer/Footer"
 import About from "./pages/about/About"
@@ -13,6 +13,7 @@ function App() {
         {/* Navbar  */}
           <Navbar />
           {/* using routes and route  */}
+          
           <Routes>
             {/* here in exact path put file and element put component */}
             <Route exact path="/" element={<Home/>} />
