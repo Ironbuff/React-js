@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Navbar from './components/navbar/Navbar'
 import Home from "./pages/Home/Home"
-import Footer from "./components/Footer/Footer"
 import About from "./pages/about/About"
+import Footer from "./components/footer/Footer"
+import SideNavbar from "./components/navbar/SideNavbar"
 
 function App() {
 
@@ -11,7 +12,8 @@ function App() {
     <>
       <Router>
         {/* Navbar  */}
-          <Navbar />
+          {/* <Navbar /> */}
+          <SideNavbar />
           {/* using routes and route  */}
           
           <Routes>

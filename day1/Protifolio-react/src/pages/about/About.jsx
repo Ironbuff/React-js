@@ -16,16 +16,16 @@ const About = () => {
   }
 
   const socialLinks = [
-    { id: 1, icon: <FaFacebookF />, link: "/" },
-    { id: 2, icon: <FaInstagram />, link: "/" },
-    { id: 3, icon: <FaTwitter />, link: "/" },
+    { icon: <FaFacebookF />, link: "/" },
+    { icon: <FaInstagram />, link: "/" },
+    { icon: <FaTwitter />, link: "/" },
   ]
   // defining getQuote Button
   return (
     <>
       {/* flex nowrap adjust content on same line in wrap it adjust the content on different line */}
-      <div className='md:px-28 px-6 flex items-center md:h-[calc(100vh-8ch)] h-auto w-full justify-between  flex-wrap md:flex-row flex-row-reverse'>
-        <div className='md:w-[50%] w-full flex flex-col space-y-12 items-start py-6'>
+      <div className='md:px-28 px-6 py-6 flex items-center md:h-[calc(100vh-8ch)] h-auto w-full justify-between  flex-wrap md:flex-row flex-row-reverse gap-16'>
+        <div className='md:w-[50%] w-full flex flex-col space-y-12 items-start'>
           {/* Hero Section content box */}
           <div className="space-y-5">
             <div className="space-y-6">
@@ -48,8 +48,8 @@ const About = () => {
             </p>
           </div>
           <div className='md:flex gap-x-2 hidden'>
-            {socialLinks.map((item) => (
-              <Link to={item.link} className='list-none border border-neutral-800 hover:border-red-600 rounded-full flex items-center justify-center shadow-lg bg-neutral-800 hover:bg-red-600 w-10 h-10 text-white ease-in-out duration-300'>
+            {socialLinks.map((item, index) => (
+              <Link key={index} to={item.link} className='list-none border border-neutral-800 hover:border-red-600 rounded-full flex items-center justify-center shadow-lg bg-neutral-800 hover:bg-red-600 w-10 h-10 text-white ease-in-out duration-300'>
                 {item.icon}
               </Link>
             ))}
@@ -57,7 +57,7 @@ const About = () => {
           {/* Button Container */}
           <div className='flex gap-x-3 gap-y-7 w-full items-center '>
             {/* Download button */}
-            <Link to="/" className='md:w-fit w-1/2 flex items-center justify-center gap-x-2 md:px-8 px-6 py-3 bg-neutral-900 text-white rounded-full'>
+            <Link to="/" className='md:w-fit w-1/2 flex flex-wrap items-center justify-center gap-x-2 md:px-8 px-5 py-3 bg-neutral-900 text-white rounded-full'>
               Download Cv
               <span className='text-white md:flex items-center pl-2'>
                 <MdOutlineFileDownload />

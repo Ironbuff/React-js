@@ -38,7 +38,9 @@ const Navbar = () => {
             </button>
 
             {/* nav-items */}
-            <div className={`${open ? "absolute top-16 left-0 w-full bg-red-500 flex-col py-3" : "relative md:flex hidden"} md:flex align-center gap-x-5 md:flex-row flex-col`}>
+            <div className={`${open ? 'flex' : 'hidden'} md:flex items-center justify-end md:bg-transparent bg-red-600
+                    md:flex-row flex-col md:relative absolute md:top-0 top-20 left-0 w-full h-auto gap-5 
+                    md:gap-14 p-4 md:p-0 backdrop-blur-3xl transition-transform md:shadow-none shadow-md rounded-md`}>
 
                 <ul className='flex items-center md:flex-row flex-col gap-5'>
 
